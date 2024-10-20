@@ -102,6 +102,26 @@ body{
 main{
     flex: 1;
 }
+#menu{
+    display: flex;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+}
+h2{
+    height: 100%;
+    background-color: aquamarine;
+    flex-grow: 1;
+    text-align: center;
+    padding-top: 20px;
+}
+#info_text{
+    width: 100%;
+    background-color: beige;
+    text-align: center;
+}
 @media (max-width: 600px) {
     body {
       background-color: red;
@@ -150,6 +170,9 @@ main{
         align-items: center;
         padding: 15px;
     }
+    #info_text{
+        display: none;
+    }
 }
 #div_ani {
     width: 100px;
@@ -161,4 +184,4 @@ main{
 @keyframes example {
     from {background-color: red;}
     to {background-color: yellow;}
-  }
+}
