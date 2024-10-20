@@ -12,17 +12,18 @@ html,body,p {
     color:black;
 }
 .top_flex{
+    background-color: lightblue;
     display: flex;
     flex-direction: row;
-    flex-grow: unset;
     align-items: flex-start;
-    flex-grow: unset;
 }
 .mid_flex{
+    background-color: lightgreen;
     display: flex;
     flex-direction: row;
 }
 .bottom_flex{
+    background-color: lightcyan;
     display: flex;
     flex-direction: column;
     flex-shrink: 0;
@@ -83,7 +84,7 @@ footer{
     height: 100px;
     background-color: lightgray;
     border-top: 2px black solid;
-    margin-top: 15px;
+    /* margin-top: 15px; */
     align-items: center;
     justify-content: center;
 }
@@ -96,7 +97,68 @@ html, body {
 body{
     display: flex;
     flex-direction: column;
+    padding: 15px;
 }
 main{
     flex: 1;
 }
+@media (max-width: 600px) {
+    body {
+      background-color: red;
+    }
+    .top_flex{
+        flex-direction: column;
+    }
+    #helper{
+        flex-direction: column;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .mid_flex{
+        flex-direction: column;
+    }
+    #extra{
+        display: none;
+    }
+}
+@media (min-width: 601px) and (max-width: 1200px) {
+    body {
+      background-color: yellow;
+    }
+    #extra{
+        display: none;
+    }
+}
+@media (min-width: 1201px) {
+    body {
+      background-color: green;
+    }
+    nav{
+        justify-content: left ;
+    }
+    #helper{
+        display: flex;
+        flex-direction: row;
+        flex-grow: 0;
+    }
+    #extra{
+        width: 100%;
+        background-color: beige;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 15px;
+    }
+}
+#div_ani {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+  }
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+  }
