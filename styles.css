@@ -1,0 +1,102 @@
+html,body,p {
+    margin: 0;
+    padding: 0;
+    
+}
+*{
+    box-sizing:border-box;
+    font-family: Verdana;
+    font-size: 16px;
+    font-weight: 0;
+    text-decoration: unset; 
+    color:black;
+}
+.top_flex{
+    display: flex;
+    flex-direction: row;
+    flex-grow: unset;
+    align-items: flex-start;
+    flex-grow: unset;
+}
+.mid_flex{
+    display: flex;
+    flex-direction: row;
+}
+.bottom_flex{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+h1{
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: 32px;
+}
+a{
+    width: 75px;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 2;
+    align-self: flex-start;
+    justify-content: right;
+}
+#helper{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+header{
+    padding: 30px;
+}
+main{
+    padding: 15px;
+}
+article{
+    margin: 15px;
+    width: 100%;
+    border: 2px black solid;
+    display: flex;
+    align-self:flex-start;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+h3{
+    height: 50px;
+    width: 50%;
+    font-size: 1.5em;
+    align-self:flex-end;
+    text-align: center;
+    background-color: lightgray;
+    border-bottom: 2px black solid;
+    border-left: 2px black solid;
+    margin-top: 0;
+}
+.art_p{
+    text-align: justify;
+    padding: 15px;
+}
+footer{
+    height: 100px;
+    background-color: lightgray;
+    border-top: 2px black solid;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
+}
+#author_name{
+    font-weight: bold;
+}
+html, body {
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+main{
+    flex: 1;
+}
