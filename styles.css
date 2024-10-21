@@ -180,8 +180,10 @@ h2{
     background-color: red;
     animation-name: example;
     animation-duration: 4s;
+    animation-iteration-count: infinite;
   }
 @keyframes example {
-    from {background-color: red;}
-    to {background-color: yellow;}
+    0% {background-color: red;}
+    50% {background-color: yellow;}
+    100% {background-color: red;}
 }
